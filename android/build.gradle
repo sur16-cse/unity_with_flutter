@@ -32,7 +32,3 @@ subprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-//dependencies {
-//    implementation files('unityLibrary\\libs\\unity-classes.jar')
-//}

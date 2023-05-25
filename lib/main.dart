@@ -124,7 +124,7 @@ class _UnityScreenState extends State<UnityScreen> {
           children: [
             UnityWidget(
               onUnityCreated: _onUnityCreated,
-              onUnityMessage: onUnityMessage,
+              // onUnityMessage: onUnityMessage,
             ),
           ],
         ),
@@ -132,11 +132,11 @@ class _UnityScreenState extends State<UnityScreen> {
     );
   }
 
-  void onUnityMessage(message) {
-    if (kDebugMode) {
-      print('Received message from unity: ${message.toString()}');
-    }
-  }
+  // void onUnityMessage(message) {
+  //   if (kDebugMode) {
+  //     print('Received message from unity: ${message.toString()}');
+  //   }
+  // }
 
   void onUnitySceneLoaded(SceneLoaded scene) {
     if (kDebugMode) {
